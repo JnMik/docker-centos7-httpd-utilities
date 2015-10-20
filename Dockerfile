@@ -4,6 +4,8 @@ MAINTAINER Jean-Michael Cyr <cyrjeanmichael@gmail.com
 # Install Utilities and Base Apps 
 RUN yum -y update && yum -y install httpd wget gcc gcc-c++ make nano locate git && yum -y clean all
 
+EXPOSE 80
+
 CMD ["/usr/sbin/httpd", "-D", " FOREGROUND"]
 
 # Documentation and References
