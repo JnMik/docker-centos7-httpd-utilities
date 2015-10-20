@@ -6,7 +6,7 @@ RUN yum -y update && yum -y install httpd wget gcc gcc-c++ make nano locate git 
 
 EXPOSE 80
 
-CMD ["/usr/sbin/httpd", "-D", " FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
 # Documentation and References
 # http://yomotherboard.com/how-to-install-upgrade-to-php-5-6-on-centos-rhel/
