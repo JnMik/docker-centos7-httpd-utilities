@@ -1,11 +1,6 @@
 #!/bin/bash
 name=jnmik/docker-centos7-httpd-utilities
 
-#while [ -z $name ]; do
-#  printf "\e[1;46mEnter the image name:\e[0m ";
-#  read -r name;
-#done
-
 version=
 while [ -z $version ]; do
   printf "\e[1;46mEnter the tag of your image:\e[0m ";
