@@ -5,7 +5,9 @@ MAINTAINER Jean-Michael Cyr <cyrjeanmichael@gmail.com>
 RUN yum -y install epel-release && yum install -y python-pip && yum -y update
 RUN yum -y install wget httpd gcc gcc-c++ make nano locate git && yum -y clean all
 
+
 EXPOSE 80
+EXPOSE 443
 
 ADD etc/httpd/conf/httpd.conf /etc/httpd/conf/httpd.conf
 RUN mkdir -p /var/www/html
